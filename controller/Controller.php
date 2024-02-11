@@ -3,16 +3,23 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-    $v1 = $_GET['var1'];
+if(!isset($_GET['pagina'])) {
+    echo "No existe la pagina";
+    return;
+}
+$v1 = $_GET['pagina'];
 
-    if($v1 == 1){
-        include('../View/Vingreso.php');
-    }
-    elseif($v1 == 2){
-        include('../View/VConsulta.php');
-    } elseif($v1 == 3) {
-        include('../View/VBuscar.php');
-    }
-    else "ninguna opción seleccionada";
+$paginas = array();
+
+// Aqui ingresamos las paginas que vamos a utilizar
+$paginas[1] = "V_Visualizar_P_Usuario";
+
+if(!array_key_exists($v1, $paginas))  {
+    echo "No existe la pagina";
+    return;
+}
+
+$paginaActual = $paginas[$v1];
+include('../View/'.$paginaActual.'.php');
 
 ?>
