@@ -13,6 +13,6 @@ error_reporting(E_ALL);
     } elseif($v1 == 3) {
         include('../View/VBuscar.php');
     }
-    else "ninguna opcion seleccionada";
+    else "ninguna opción seleccionada";
 
 ?>
