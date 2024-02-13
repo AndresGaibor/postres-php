@@ -5,6 +5,8 @@ body {
     background-size: cover;
     background-position: center;
     transition: background 1s ease-in-out;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out;
     background-image: url('images/3.jpg');
 }
 
@@ -13,7 +15,10 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex;
+    /* background-color: red; */
+    /* background: red; */
+    background: #333 !important;
+    display: block;
     justify-content:space-between;
     align-items: center;
     padding-right: 20px;

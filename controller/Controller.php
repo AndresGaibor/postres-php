@@ -13,6 +13,7 @@ $paginas = array();
 
 // Aqui ingresamos las paginas que vamos a utilizar
 $paginas[1] = "V_Visualizar_P_Usuario";
+$paginas['productos'] = "V_Productos";
 
 if(!array_key_exists($v1, $paginas))  {
     echo "No existe la pagina";
@@ -20,6 +21,6 @@ if(!array_key_exists($v1, $paginas))  {
 }
 
 $paginaActual = $paginas[$v1];
-include('../View/'.$paginaActual.'.php');
+include('./View/'.$paginaActual.'.php');
 
 ?>
