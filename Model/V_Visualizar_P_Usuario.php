@@ -15,9 +15,9 @@ while ($mostrar = mysqli_fetch_array($resul)) {
 ?>
     <div class="card">
         <img src="<?php echo $mostrar['img_url'] ?>" alt="">
-        <label for=""><?php echo $mostrar['p.nombre_producto'] ?></label>
-        <label for=""><?php echo $mostrar['p.id'] ?></label>
-        <label for=""><?php echo $mostrar['p.precio'] ?></label>
+        <label for=""><?php echo $mostrar['nombre_producto'] ?></label>
+        <label for=""><?php echo $mostrar['id'] ?></label>
+        <label for=""><?php echo $mostrar['precio'] ?></label>
         <label for=""><?php echo $mostrar['ingredientes'] ?></label>
     </div>
 <?php
