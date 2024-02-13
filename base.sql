@@ -1,7 +1,7 @@
 CREATE DATABASE tienda_postres
     DEFAULT CHARACTER SET = 'utf8mb4';
 
-USE DATABASE tienda_postres;
+USE tienda_postres;
 
 CREATE TABLE Provincia(
     id int AUTO_INCREMENT,
