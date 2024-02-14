@@ -9,15 +9,14 @@ if (isset($_GET['pagina'])) {
 
 // se obtiene la cantidad de productos en el carrito
 
-session_start();
-
 if (isset($_SESSION['sesion_iniciada'])) {
-    $session_iniciada = $_SESSION['session_iniciada'];
+    $session_iniciada = $_SESSION['sesion_iniciada'];
 } else {
     $session_iniciada = false;
 }
 
-if($session_iniciada) {
+
+if($session_iniciada == "iniciado") {
     $texto_login = "Cerrar sesion";
 } else {
     $texto_login = "Iniciar en sesion";
@@ -39,10 +38,8 @@ $cantidad_carrito = count($carrito);
                     <a href="./?pagina=productos" class="nav-link <?php echo $pagina == 'productos' ? 'active' : ''; ?>" aria-current="page">Productos</a>
                 </li>
                 <li class="nav-item mt-1">
-                    <a href="./?pagina=ingresar_admin" class="nav-link <?php echo $pagina == 'ingresar_admin' ? 'active' : ''; ?>" aria-current="page">Ingresar admin</a>
-                </li>
-                <li class="nav-item mt-1">
-                    <a href="./?pagina=login" class="nav-link <?php echo $pagina == 3 ? 'active' : ''; ?>" aria-current="page"><?php echo $texto_login; ?></a>
+                    <a href="<?php echo $session_iniciada == "iniciado" ? "./Model/M_Salir.php" : "./?pagina=login" ?>"
+                    class="nav-link <?php echo $pagina == 3 ? 'active' : ''; ?>" aria-current="page"><?php echo $texto_login; ?></a>
                 </li>
                 <li class="nav-item mt-1">
                     <a href="./?pagina=reportes" class="nav-link <?php echo $pagina == 'reportes' ? 'active' : ''; ?>" aria-current="page">Reportes</a>
