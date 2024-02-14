@@ -22,11 +22,16 @@ if(!isset($input['cantidad'])){
     echo "no hay cantidad";
     return;
 }
+if(!isset($input['stock'])){
+    echo "no hay stock";
+    return;
+}
 
 $id = $input['id'];
 $nombre = $input['nombre'];
 $precio = $input['precio'];
 $cantidad = $input['cantidad'];
+$stock = $input['stock'];
 
 session_start();
 
@@ -41,7 +46,8 @@ $producto = array(
     'id' => $id,
     'nombre' => $nombre,
     'precio' => $precio,
-    'cantidad' => $cantidad
+    'cantidad' => $cantidad,
+    'stock' => $stock
 );
 
 array_push($carrito, $producto);

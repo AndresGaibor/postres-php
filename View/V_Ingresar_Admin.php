@@ -12,7 +12,7 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresar un nuevo postre</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <!-- <div class="modal-body">
                     <form action="./Model/M_Ingresar_Admin.php" method="post">
                         <label for="">Ingrese el nombre del postre:</label>
                         <br>
@@ -32,38 +32,37 @@
                         <br>
                         <input type="submit" value="Agregar">
                     </form>
+                </div> -->
+                <div class="modal-body">
+                    <form action="./Model/M_Ingresar_Admin.php" method="post">
+                        <label for="">Ingrese el nombre del postre:</label>
+                        <br>
+                        <input type="text" name="nombre" required pattern="[a-zA-Z ]+" maxlength="50">
+                        <br>
+                        <label for="">Ingrese el precio:</label>
+                        <br>
+                        <input type="number" name="precio" min="1.00" required step="0.01" max="50.00">
+                        <br>
+                        <label for="">Ingrese la cantidad:</label>
+                        <br>
+                        <input type="number" name="cantidad" required min="1" max="100">
+                        <br>
+                        <label for="">Ingrese el url de la imagen:</label>
+                        <br>
+                        <input type="url" name="imagen" required pattern="https?://.+(\.jpg|\.jpeg|\.png|\.gif)">
+                        <br>
+                        <select name="categoria">
+                            <option value="1">Tortas</option>
+                            <option value="2">Helado</option>
+                            <option value="3">Galleta</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="Agregar">
+                    </form>
                 </div>
             </div>
         </div>
 
-        <div class="modal-body">
-            <form action="./Model/M_Ingresar_Admin.php" method="post">
-                <label for="">Ingrese el nombre del postre:</label>
-                <br>
-                <input type="text" name="nombre" required pattern="[a-zA-Z ]+" maxlength="50">
-                <br>
-                <label for="">Ingrese el precio:</label>
-                <br>
-                <input type="number" name="precio" min="1.00" required step="0.01" max="50.00">
-                <br>
-                <label for="">Ingrese la cantidad:</label>
-                <br>
-                <input type="number" name="cantidad" required min="1" max="100">
-                <br>
-                <label for="">Ingrese el url de la imagen:</label>
-                <br>
-                <input type="url" name="imagen" required pattern="https?://.+(\.jpg|\.jpeg|\.png|\.gif)">
-                <br>
-                <select name="categoria">
-                    <option value="1">Tortas</option>
-                    <option value="2">Helado</option>
-                    <option value="3">Galleta</option>
-                </select>
-                <br>
-                <input type="submit" value="Agregar">
-            </form>
-        </div>
-        </div>
-    </div>
+
     </div>
 </div>
