@@ -41,7 +41,7 @@ foreach ($carrito as $producto) {
     </div>
     <div class="row">
         <div class="col">
-            <button type="button" class="btn btn-success mx-auto" onclick="location.href='checkout.php'">Comprar</button>
+            <button type="button" class="btn btn-success mx-auto" onclick="location.href='./?pagina=terminarpedido'">Comprar</button>
         </div>
     </div>
 </div>
