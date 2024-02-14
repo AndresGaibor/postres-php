@@ -1,6 +1,6 @@
 <?php 
-    include("../Config/conexion.php");
-    include("../View/VPlantilla.php");
+    include("../Config/config.php");
+    include("../View/V_Plantilla.php");
 
     $sql = "SELECT * FROM Pedido";
     $resultado = mysqli_query($conexion, $sql);
