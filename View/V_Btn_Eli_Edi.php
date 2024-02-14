@@ -1,3 +1,3 @@
 <div class="container">
-<button type="button" class="btn btn-primary" ><a href="./View/v_elimainar_producto.php">Eliminar/Editar</a></button>
+    <a class="btn btn-primary" href="./View/v_elimainar_producto.php" role="button">Eliminar/Editar</a>
 </div>
