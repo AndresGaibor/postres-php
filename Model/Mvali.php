@@ -7,12 +7,20 @@ error_reporting(E_ALL);
 include('../config/config.php');
 $email = $_POST['email'];
 $clave = $_POST['password'];
-$claveSha1 = sha1($clave);
-// echo $claveSha1;
-return;
-$sql = "SELECT * FROM usuario WHERE correo = '$email' AND clave = '$clave'";
-$resultado = mysqli_query($conexion, $sql);
+
+if($email == "" || $clave == ""){
+    echo "Por favor, ingrese su correo y contraseña.";
+    return;
+}
+ $sql = "SELECT * FROM usuario WHERE correo = '$email' AND clave = '$clave'";
+ $resultado = mysqli_query($conexion, $sql);
+ session_start();
 session_start();
+
+if(!$resultado) {
+    echo "Error en la consulta: " . mysqli_error($conexion);
+    exit;
+}
 
 if(mysqli_num_rows($resultado) > 0) {
 
@@ -37,5 +45,6 @@ if(mysqli_num_rows($resultado) > 0) {
     echo "Credenciales incorrectas. Por favor, inténtalo de nuevo.";
 }
 
+// header("Location: ../index.php?pagina=productos");
 
 ?>
