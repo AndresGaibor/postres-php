@@ -45,7 +45,14 @@ if(mysqli_num_rows($resultado_verificar) > 0) {
         // $fila = mysqli_fetch_assoc($ejecutar);
         $_SESSION['nombre'] = $nombre;
         $_SESSION['esAdmin'] = false;
-        header("Location: ../index.php?pagina=productos");
+        $_SESSION['id_usuario'] = $id_usuario;
+        
+        if(isset($_SESSION['terminandocompra']) && $_SESSION['terminandocompra'] == true){
+            $_SESSION['terminandocompra'] = false;
+            header("Location: ../index.php?pagina=terminarpedido");
+        } else {
+            header("Location: ../index.php?pagina=productos");
+        }
     } else {
         echo 'No se agregó';
     }

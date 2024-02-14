@@ -41,7 +41,7 @@ $cantidad_carrito = count($carrito);
                 </li>
                 <li class="nav-item mt-1">
                     <a href="<?php echo $session_iniciada == "iniciado" ? "./Model/M_Salir.php" : "./?pagina=login" ?>"
-                    class="nav-link <?php echo $pagina == 3 ? 'active' : ''; ?>" aria-current="page"><?php echo $texto_login; ?></a>
+                    class="nav-link <?php echo $pagina == 'login' ? 'active' : ''; ?>" aria-current="page"><?php echo $texto_login; ?></a>
                 </li>
                 <li class="nav-item mt-1 <?php echo $esAdmin ? '' : 'd-none'; ?>">
                     <a href="./?pagina=reportes" class="nav-link <?php echo $pagina == 'reportes' ? 'active' : ''; ?>" aria-current="page">Reportes</a>

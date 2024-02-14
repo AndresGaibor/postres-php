@@ -103,7 +103,7 @@ $resultado = mysqli_query($conexion, $sql);
                         </div>
 
 
-                        <button href="#" id="producto-<?php echo $fila['id'] ?>" onclick="<?php echo existeEnCarrito($fila['id']) ? 'quitarDelCarrito(' . $fila['id'] . ')' : 'addToCart(' . $fila['id'] . ', \'' . $fila['nombre_producto'] . '\', ' . $fila['precio'] . ', '.$fila['stock'].');' ?>" class="btn w-auto btn-<?php echo existeEnCarrito($fila['id']) ? 'danger ' : 'warning '; echo $fila['stock'] == 9 ? 'disabled' : ''; ?>
+                        <button href="#" id="producto-<?php echo $fila['id'] ?>" onclick="<?php echo existeEnCarrito($fila['id']) ? 'quitarDelCarrito(' . $fila['id'] . ')' : 'addToCart(' . $fila['id'] . ', \'' . $fila['nombre_producto'] . '\', ' . $fila['precio'] . ', '.$fila['stock'].');' ?>" class="btn w-auto btn-<?php echo existeEnCarrito($fila['id']) ? 'danger ' : 'warning '; echo $fila['stock'] == 0 ? 'disabled' : ''; ?>
                         "><?php echo existeEnCarrito($fila['id']) ? 'Quitar' : 'Agregar carrito'; ?>
                             <i class="fa-solid fa-cart-shopping fa-sm"></i></button>
                     </div>
