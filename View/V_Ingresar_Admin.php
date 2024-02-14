@@ -52,7 +52,7 @@
                 <br>
                 <label for="">Ingrese el url de la imagen:</label>
                 <br>
-                <input type="url" name="imagen" required pattern="https?://.+(\.jpg|\.jpeg|\.png|\.gif)">
+                <input type="url" name="imagen" required pattern="https?://.+">
                 <br>
                 <select name="categoria">
                     <option value="1">Tortas</option>
