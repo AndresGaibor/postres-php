@@ -28,16 +28,15 @@
             <?php
             if (isset($_SESSION['esAdmin']) && $_SESSION['esAdmin'])
 
-                include('./View/V_Ingresar_Admin.php');
+                // include('./View/V_Ingresar_Admin.php');
                 // include('./View/V_Btn_Eli_Edi.php');
 
                 ?>
                 <center>
-                <div class="container" style="display: flex;margin: auto;vertical-align: top;"> 
+                <!-- <div class="container">  -->
                     <?php include('./View/V_Ingresar_Admin.php'); ?>
                     <br>
-                    <?php include('./View/V_Btn_Eli_Edi.php'); ?>
-                </div>
+                <!-- </div> -->
                 
                 </center>
                 <?php ?>

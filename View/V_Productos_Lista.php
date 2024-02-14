@@ -2,7 +2,7 @@
 include('./config/config.php');
 
 // CAMBIAR ESTE VALOR
-$cantidad_productos_por_pagina = 2;
+$cantidad_productos_por_pagina = 5;
 
 $limit = $cantidad_productos_por_pagina;
 
