@@ -6,10 +6,12 @@
             if (isset($_SESSION['esAdmin']) && $_SESSION['esAdmin'])
                 ?>
                 <center>
-                <div class="container" style="display: inline-block;margin: auto;vertical-align: top;"> 
+                <div class="container" style="display: flex;margin: auto;vertical-align: top;"> 
                     <?php include('./View/V_Ingresar_Admin.php'); ?>
+                    <br>
                     <?php include('./View/V_Btn_Eli_Edi.php'); ?>
                 </div>
+                
                 </center>
                 <?php
             ?>
