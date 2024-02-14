@@ -22,6 +22,8 @@ if($session_iniciada == "iniciado") {
     $texto_login = "Iniciar en sesion";
 }
 
+$esAdmin = isset($_SESSION['esAdmin']) ? $_SESSION['esAdmin'] : false;
+
 $carrito = isset($_SESSION['carrito']) ? $_SESSION['carrito'] : array();
 $cantidad_carrito = count($carrito);
 
@@ -41,7 +43,7 @@ $cantidad_carrito = count($carrito);
                     <a href="<?php echo $session_iniciada == "iniciado" ? "./Model/M_Salir.php" : "./?pagina=login" ?>"
                     class="nav-link <?php echo $pagina == 3 ? 'active' : ''; ?>" aria-current="page"><?php echo $texto_login; ?></a>
                 </li>
-                <li class="nav-item mt-1">
+                <li class="nav-item mt-1 <?php echo $esAdmin ? '' : 'd-none'; ?>">
                     <a href="./?pagina=reportes" class="nav-link <?php echo $pagina == 'reportes' ? 'active' : ''; ?>" aria-current="page">Reportes</a>
                 </li>
                 <li class="nav-item">
