@@ -11,7 +11,7 @@
     $pdf->AddPage();
     
     // Establecer un tipo de fuente más atractivo y grande
-    $pdf->SetFont('Arial','B',16);
+    $pdf->SetFont('Arial','B',10);
 
     // Título del informe
     $pdf->Cell(0,10,'Informe de Pedidos',0,1,'C');
