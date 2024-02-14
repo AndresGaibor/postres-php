@@ -22,13 +22,13 @@
     $pdf->Cell(30,10,'ID',1,0,'C', true);
     $pdf->Cell(50,10,'USUARIO ID',1,0,'C', true);
     $pdf->Cell(50,10,'FECHA PEDIDO',1,0,'C', true);
-    $pdf->Cell(30,10,'SUBTOTAL',1,1,'C', true);
-    $pdf->Cell(30,10,'IVA',1,1,'C', true);
-    $pdf->Cell(30,10,'TOTAL',1,1,'C', true);
+    $pdf->Cell(30,10,'SUBTOTAL',1,0,'C', true);
+    $pdf->Cell(30,10,'IVA',1,0,'C', true);
+    $pdf->Cell(30,10,'TOTAL',1,0,'C', true);
 
     // Restablecer tipo de fuente para los datos
     $pdf->SetFont('Arial','',12);
-    $pdf->Ln(10); 
+    $pdf->Ln(5); 
     while($mostrar = mysqli_fetch_array($resultado))
     {
         // Datos de la tabla
@@ -36,9 +36,9 @@
         $pdf->Cell(30,10,$mostrar['id'],1,0,'C', true);
         $pdf->Cell(50,10,$mostrar['usuario_id'],1,0,'C', true);
         $pdf->Cell(50,10,$mostrar['fecha_pedido'],1,0,'C', true);
-        $pdf->Cell(30,10,$mostrar['subtotal'],1,1,'C', true);
-        $pdf->Cell(30,10,$mostrar['iva'],1,1,'C', true);
-        $pdf->Cell(30,10,$mostrar['total'],1,1,'C', true);
+        $pdf->Cell(30,10,$mostrar['subtotal'],1,0,'C', true);
+        $pdf->Cell(30,10,$mostrar['iva'],1,0,'C', true);
+        $pdf->Cell(30,10,$mostrar['total'],1,0,'C', true);
     }
 
     // Salida del PDF
