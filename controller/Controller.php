@@ -12,6 +12,7 @@ $v1 = $_GET['pagina'];
 $paginas = array();
 
 // Aqui ingresamos las paginas que vamos a utilizar
+$paginas[0] = "V_Inicio";
 $paginas[1] = "../Model/M_Reporte_Pedido";
 $paginas['productos'] = "V_Productos";
 $paginas['ingresar_admin'] = "V_Ingresar_Admin";
