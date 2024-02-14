@@ -17,9 +17,10 @@ $paginas[1] = "../Model/M_Reporte_Pedido";
 $paginas['productos'] = "V_Productos";
 $paginas['ingresar_admin'] = "V_Ingresar_Admin";
 $paginas['crearcuenta'] = "V_CrearCuenta";
-$paginas['login'] = "../Login";
-$paginas['terminarpedido'] = "V_DatosUsuario";
+$paginas['login'] = "V_Login";
+$paginas['terminarpedido'] = "V_TerminarPedido";
 $paginas['reportes'] = "V_ALL_Reportes";
+$paginas['ayuda'] = "V_Ayuda";
 
 if(!array_key_exists($v1, $paginas))  {
     echo "No existe la pagina";

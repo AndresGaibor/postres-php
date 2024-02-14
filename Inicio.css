@@ -1,9 +1,4 @@
-nav{
-  text-align: right;
-  padding-right: 50px;
-  align-items: center;
-  padding: 20px;
-}
+
 
 .textos-header{
   display:flex;
@@ -183,10 +178,10 @@ footer{
 
 
 @media only screen and (max-width: 480px) {
-  nav {
+  /* nav {
     text-align: center;
     padding: 10px; /* Ajusta el padding según sea necesario */
-  }
+  } */
 
   .textos-header {
     height: auto; /* Ajusta la altura según necesites */
@@ -237,7 +232,7 @@ footer{
     width: 100%; /* Utiliza todo el ancho disponible */
     margin-bottom: 5px; /* Ajusta el margen inferior según necesites */
   }
-}
+
 .contendeor-sobre-nosotros{
   display: flex;
   justify-content: space-evenly;
