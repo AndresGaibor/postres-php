@@ -16,3 +16,91 @@ INSERT INTO Producto(nombre_producto, precio, stock, img_url) VALUES('Copa de or
 -- INSERTAR CATEGORIAS
 INSERT INTO Categoria(nombre_categoria) VALUES('Helado');
 INSERT INTO Categoria(nombre_categoria) VALUES('Galleta');
+
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Azuay');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Cuenca', 2);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Bolívar');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Guaranda', 3);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Chillanes', 3);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Chimbo', 3);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Echeandía', 3);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('San Miguel', 3);
+
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Cañar');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Azogues', 4);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('El Tambo', 4);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Carchi');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Tulcán', 5);
+
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Chimborazo');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Riobamba', 6);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Guano', 6);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Alausí', 6);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Colta', 6);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Chambo', 6);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Chunchi', 6);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Cumandá', 6);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Cotopaxi');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Latacunga', 7);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('El Oro');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Machala', 8);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Esmeraldas');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Ciudad Esmeraldas', 9);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Atacames', 9);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Galápagos');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Puerto Baquerizo Moreno', 10);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Guayas');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Guayaquil', 11);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Imbabura');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Ibarra', 12);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Loja');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Loja', 13);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Los Ríos');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Babahoyo', 14);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Manabí');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Portoviejo', 15);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Morona Santiago');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Macas', 16);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Napo');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Tena', 17);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Orellana');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Francisco de Orellana', 18);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Pastaza');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Puyo', 19);
+
+-- INSERT INTO Provincia(nombre_provincia) VALUES('Pichincha');
+-- INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Quito', 20);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Santa Elena');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Santa Elena', 20);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Santo Domingo de los Tsáchilas');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Santo Domingo', 21);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Sucumbíos');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Nueva Loja', 22);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Tungurahua');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Ambato', 23);
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Baños de Agua Santa', 23);
+
+INSERT INTO Provincia(nombre_provincia) VALUES('Zamora Chinchipe');
+INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Zamora', 24);
