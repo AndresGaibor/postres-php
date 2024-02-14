@@ -17,7 +17,7 @@ foreach ($carrito as $producto) {
 }
 ?>
 
-<div class="container border rounded-2">
+<div class="container border rounded-2 p-2">
     <h3 class="center">Mi pedido</h3>
     <!-- una linea separadora -->
     <hr>
@@ -36,7 +36,7 @@ foreach ($carrito as $producto) {
             <strong>Subtotal</strong>
         </div>
         <div class="col">
-            <p>$<?php echo number_format($subtotal, 2, ',', ''); ?></p>
+            <strong>$<?php echo number_format($subtotal, 2, ',', ''); ?></strong>
         </div>
     </div>
     <div class="row">
