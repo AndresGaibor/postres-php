@@ -13,7 +13,7 @@
         <li class="list-group-item"><a href="./Model/M_Reporte_Pedido.php">Reportes de pedidos</a></li>
         <li class="list-group-item"><a href="./Model/M_Reporte_Usuarios.php">Reporte de Usuarios</a></li>
         <li class="list-group-item"><a href="./Model/M_SeleccionarCategoria.php">Reporte por categoria</a></li>
-        <li class="list-group-item"><a href="">Reporte x</a></li>
+        <li class="list-group-item"><a href="./Model/reporte_producto_cantidad.php">Reporte de producto por cantidad</a></li>
         <li class="list-group-item"><a href="">Reporte x</a></li>
         <li class="list-group-item"><a href="">Reporte x</a></li>
     </ul>
