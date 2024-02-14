@@ -4,10 +4,12 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 if(!isset($_GET['pagina'])) {
-    echo "No existe la pagina";
-    return;
+    // echo "No existe la pagina";
+    $v1 = 0;
+} else {
+    $v1 = $_GET['pagina'];
 }
-$v1 = $_GET['pagina'];
+// $v1 = $_GET['pagina'];
 
 $paginas = array();
 

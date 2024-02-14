@@ -30,7 +30,7 @@ $cantidad_carrito = count($carrito);
 ?>
 <nav class="navbar navbar-expand-sm bg-body-tertiary mb-2">
     <div class="container-fluid">
-        <a href="./" class="navbar-brand">Kattyta <small>panaderia</small></a>
+        <a href="./?pagina=0" class="navbar-brand">Kattyta <small>panaderia</small></a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto mb-2 mt-0 mb-lg-0">
                 <li class="nav-item mt-1">
