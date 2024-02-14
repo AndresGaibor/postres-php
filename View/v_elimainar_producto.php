@@ -12,7 +12,7 @@
         <th>Modificar</th>
         <th>Eliminar</th>
       </tr>
-       <?php include("../Model/EditarMostrar.php"); ?>
+       <?php include("./Model/EditarMostrar.php"); ?>
     </table>
   </center>
 
