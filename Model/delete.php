@@ -4,7 +4,7 @@ $clave = $_POST['id'];
 $sql = "DELETE FROM producto WHERE id = $clave";
 $regre = mysqli_query($conexion, $sql);
 
-if ($regre && mysqli_affected_rows($conn) > 0) {
+if ($regre && mysqli_affected_rows($conexion) > 0) {
     header("Location: ../View/v_eliminar_producto.php");
     exit();
 } else {

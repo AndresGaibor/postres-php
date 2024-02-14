@@ -4,7 +4,7 @@ include ("../config/config.php");
 
 $sql = "SELECT * FROM producto";
 
-$resultado = mysqli_query($conn,$sql);
+$resultado = mysqli_query($conexion,$sql);
 
 //crear objeto
 $pdf = new PDF();

@@ -46,6 +46,9 @@ $cantidad_carrito = count($carrito);
                 <li class="nav-item mt-1 <?php echo $esAdmin ? '' : 'd-none'; ?>">
                     <a href="./?pagina=reportes" class="nav-link <?php echo $pagina == 'reportes' ? 'active' : ''; ?>" aria-current="page">Reportes</a>
                 </li>
+                <li class="nav-item mt-1 <?php echo $esAdmin ? '' : 'd-none'; ?>">
+                    <a href="./?pagina=emcategoria" class="nav-link <?php echo $pagina == 'emcategoria' ? 'active' : ''; ?>" aria-current="page">Categorias</a>
+                </li>
                 
                 <li class="nav-item">
                     <a href="./?pagina=terminarpedido" class="nav-link" aria-current="page">

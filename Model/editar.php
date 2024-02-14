@@ -1,8 +1,11 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 include("../config/config.php");
 $id = $_GET['id'];
 $sql = "SELECT * from producto where id='$id'";
-$resultado = mysqli_query($conn, $sql);
+$resultado = mysqli_query($conexion, $sql);
 $mostrar = mysqli_fetch_array($resultado);
 
 if (isset($_GET['success'])) {

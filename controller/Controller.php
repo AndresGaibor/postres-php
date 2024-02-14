@@ -23,6 +23,7 @@ $paginas['login'] = "V_Login";
 $paginas['terminarpedido'] = "V_TerminarPedido";
 $paginas['reportes'] = "V_ALL_Reportes";
 $paginas['ayuda'] = "V_Ayuda";
+$paginas['emcategoria'] = "v_eliminar_modificar_categoria";
 // $paginas['reportes'] = "V_reporte_producto_cantidad";
 
 

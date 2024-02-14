@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliminar/editar</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-
-<body>
     <div class="container mt-5">
         <h1 class="text-center">Categoria</h1>
         <table class="table">
@@ -22,7 +11,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php include("../Model/editar_mostrar_categoria.php"); ?>
+                <?php include("./Model/editar_mostrar_categoria.php"); ?>
             </tbody>
         </table>
     </div>
@@ -86,6 +75,3 @@
             document.getElementById("modalModificarBody").innerHTML = formularioModificar;
         }
     </script>
-</body>
-
-</html>
