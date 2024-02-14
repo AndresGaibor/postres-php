@@ -28,7 +28,7 @@
 
     // Restablecer tipo de fuente para los datos
     $pdf->SetFont('Arial','',12);
-    $pdf->Ln(5); 
+    $pdf->Ln(10); 
     while($mostrar = mysqli_fetch_array($resultado))
     {
         // Datos de la tabla
