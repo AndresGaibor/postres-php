@@ -52,7 +52,7 @@ if (isset($_GET['success'])) {
           <label class="uk-form-label" for="nombre">Ingrese el url de la imagen </label>
           <input type="text" name="img_url">
           <br><br>
-          <div class="uk-margin">s
+          <div class="uk-margin">
             <input id="buton" type="submit" class="ui primary button" value="Modificar">
           </div>
         </fieldset>
