@@ -1,4 +1,4 @@
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <div class="container-deregistro mx-auto">
         <h2>Registro de Usuario</h2>
         <form action="./Model/M_IngresoU.php" method="post">
@@ -9,24 +9,23 @@
             <input type="text" id="apellido" name="apellido" required>
             <br>
             <label for="Provincia">Provincia*</label>
-            <select id="provincia" name="provincia" required>
+            <select id="provincia" name="provincia">
                 <option value="Escoja una">Escoja una</option>
-                <!-- Agrega más opciones aquí -->
+                <!-- Otras opciones de provincias -->
             </select>
             <br>
 
             <label for="Ciudad">Ciudad*</label>
-            <select id="ciudad" name="ciudad" required>
+            <select id="ciudad" name="ciudad">
                 <option value="Escoja una">Escoja una</option>
-                <!-- Agrega más opciones aquí -->
             </select>
             <br>
 
             <label for="Calle">Calle Principal*</label>
-            <select id="Calle" name="calle" required>
+            <select id="calle" name="calle">
                 <option value="Escoja una">Escoja una</option>
-                <!-- Agrega más opciones aquí -->
             </select>
+
             <br>
             <label for="email">Email*</label>
             <input type="email" id="email" name="email" required>
@@ -38,5 +37,6 @@
             <input type="tel" id="telefono" name="telefono" required>
             <br>
             <input type="submit" name="enviar" value="Registrar">
+
         </form>
     </div>
