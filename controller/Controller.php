@@ -18,6 +18,7 @@ $paginas = array();
 $paginas[1] = "V_Visualizar_P_Usuario";
 $paginas['productos'] = "V_Productos";
 $paginas['ingresar_admin'] = "V_Ingresar_Admin";
+$paginas['ingresar_admin'] = "V_CrearCuenta.php";
 
 if(!array_key_exists($v1, $paginas))  {
     echo "No existe la pagina";
