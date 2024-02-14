@@ -31,7 +31,7 @@
             <ion-icon name="key"></ion-icon><input type="password" placeholder="Contraseña..." required><br><br>
             <br>
             <button type="submit" onclick="Iniciar()">Iniciar sesión</button>
-            <a class='ewk_banner_link' href='./index.php?pagina=crearcuenta'>Registrarte</a>
+            <a class='ewk_banner_link' href='controller/Controller.php?var1=1'>Registrarte</a>
         </section>
     </main>
     <script src="Login.js"></script>
