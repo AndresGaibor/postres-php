@@ -7,7 +7,7 @@ $resultado = mysqli_query($conexion, $sql);
 
 if(mysqli_num_rows($resultado) > 0) {
 
-    header("index.php");
+    header("Location: ../index.php?pagina=productos");
     exit(); // Importante: detener la ejecución del script después de la redirección
 } else {
     // Permanecer en la misma página si la validación es incorrecta
