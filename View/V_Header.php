@@ -41,7 +41,7 @@ $cantidad_carrito = count($carrito);
                     <a href="./?pagina=ingresar_admin" class="nav-link <?php echo $pagina == 'ingresar_admin' ? 'active' : ''; ?>" aria-current="page">Ingresar admin</a>
                 </li>
                 <li class="nav-item mt-1">
-                    <a href="./?pagina=3" class="nav-link <?php echo $pagina == 3 ? 'active' : ''; ?>" aria-current="page"><?php echo $texto_login; ?></a>
+                    <a href="./?pagina=login" class="nav-link <?php echo $pagina == 3 ? 'active' : ''; ?>" aria-current="page"><?php echo $texto_login; ?></a>
                 </li>
                 <li class="nav-item">
                     <a href="./?pagina=4" class="nav-link" aria-current="page">

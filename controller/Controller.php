@@ -8,17 +8,18 @@ if(!isset($_GET['pagina'])) {
     return;
 }
 $v1 = $_GET['pagina'];
-$v2 =$_GET['v'];
-if($v2==1){
-    include("/Model/M_Reporte_Pedido.php");
-}
+// $v2 =$_GET['v'];
+// if($v2==1){
+//     include("/Model/M_Reporte_Pedido.php");
+// }
 $paginas = array();
 
 // Aqui ingresamos las paginas que vamos a utilizar
-$paginas[1] = "V_Visualizar_P_Usuario";
+$paginas[1] = "../Model/M_Reporte_Pedido";
 $paginas['productos'] = "V_Productos";
 $paginas['ingresar_admin'] = "V_Ingresar_Admin";
 $paginas['crearcuenta'] = "V_CrearCuenta";
+$paginas['login'] = "../Login";
 
 if(!array_key_exists($v1, $paginas))  {
     echo "No existe la pagina";
