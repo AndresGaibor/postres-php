@@ -11,9 +11,9 @@ function Header()
     // Arial bold 15
     $this->SetFont('Arial','B',15);
     // Movernos a la derecha
-    $this->Cell(80);
+    $this->Cell(60);
     // Título
-    $this->Cell(30,10,'KATTYTA PANADERIA',1,0,'C');
+    $this->Cell(60,10,'KATTYTA PANADERIA',1,0,'C');
     // Salto de línea
     $this->Ln(20);
 }
