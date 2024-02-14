@@ -24,10 +24,12 @@ foreach ($carrito as $producto) {
     <?php foreach ($carrito as $producto) : ?>
         <div class="row">
             <div class="col">
-                <p><strong><?php echo $producto['cantidad']; ?>x</strong> <?php echo $producto['nombre']; ?></p>
+                <p><a href="#" onclick="addToCart2(<?php echo $producto['id']; ?>, '<?php echo $producto['nombre']; ?>', <?php echo $producto['precio']; ?>, <?php echo $producto['stock']; ?>, <?php echo $producto['cantidad']; ?>);"
+                ><i class="fa-solid fa-pencil text-warning enable-button-pointers"></i></a><strong><?php echo $producto['cantidad']; ?>x</strong> <?php echo $producto['nombre']; ?></p>
             </div>
             <div class="col">
                 <p>$<?php echo number_format($producto['precio'], 2, ',', ''); ?></p>
+                
             </div>
         </div>
     <?php endforeach; ?>
@@ -45,3 +47,40 @@ foreach ($carrito as $producto) {
         </div>
     </div>
 </div>
+<script>
+        document.getElementById('cancel_btn_car').addEventListener('click', async function() {
+            await quitarDelCarrito(producto_item.id);
+            const modalCantidad = new bootstrap.Modal('#modalCantidad');
+            modalCantidad.hide();
+            location.reload();
+        });
+        
+        async function addToCart2(id, nombre, precio, stock, cantidad) {
+            producto_item = {
+                id: id,
+                nombre: nombre,
+                precio: precio,
+                stock,
+                cantidad
+            };
+
+            document.getElementById('nombre_p').innerText = nombre;
+
+            document.getElementById('confirm_btn_car_text').innerText = 'Guardar cambio';
+            document.getElementById('confirm_btn_car').classList.add('btn-primary');
+            document.getElementById('cancel_btn_car').innerHTML = 'Eliminar del carrito';
+            document.getElementById('cancel_btn_car').classList.add('btn-danger');
+
+            const input_cant = document.getElementById('input_cant');
+            input_cant.value = cantidad;
+            input_cant.max = stock;
+            const modalCantidad = new bootstrap.Modal('#modalCantidad');
+
+
+            await modalCantidad.show();
+            setTimeout(() => {
+                input_cant.focus();
+            }, 600);
+        }
+
+    </script>

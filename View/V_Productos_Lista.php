@@ -63,9 +63,9 @@ $resultado = mysqli_query($conexion, $sql);
                         <!-- <input type="button" value="Cancelar"> -->
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button class="btn btn-primary w-auto" type="submit" >
-                        Agregar al carrito <i class="fa-solid fa-cart-shopping fa-sm"></i>
+                        <button type="button" id="cancel_btn_car" class="btn btn-secondary w-auto" data-bs-dismiss="modal">Cancelar</button>
+                        <button id="confirm_btn_car" class="btn btn-primary w-auto" type="submit" >
+                        <span id="confirm_btn_car_text">Agregar al carrito </span><i class="fa-solid fa-cart-shopping fa-sm"></i>
                         </button>
                     </div>
                 </form>
@@ -138,11 +138,15 @@ $resultado = mysqli_query($conexion, $sql);
         document.getElementById('cantidadform').addEventListener('submit', async function(e) {
             e.preventDefault();
             const cantidad = document.getElementById('input_cant').value;
+            await quitarDelCarrito(producto_item.id);
             await sendAddToCart(producto_item.id, producto_item.nombre, producto_item.precio, +cantidad, producto_item.stock);
             const modalCantidad = new bootstrap.Modal('#modalCantidad');
             modalCantidad.hide();
 
             document.getElementById('input_cant').value = '';
+
+            // setTimeout(() => location.reload(), 3000);
+            location.reload();
 
         });
 
@@ -161,10 +165,10 @@ $resultado = mysqli_query($conexion, $sql);
                 })
             });
 
-            location.reload();
         }
 
         async function addToCart(id, nombre, precio, stock) {
+            
             producto_item = {
                 id: id,
                 nombre: nombre,
@@ -174,13 +178,20 @@ $resultado = mysqli_query($conexion, $sql);
 
             document.getElementById('nombre_p').innerText = nombre;
 
+            document.getElementById('confirm_btn_car_text').innerText = 'Agregar al carrito ';
+            document.getElementById('confirm_btn_car').classList.add('btn-primary');
+            document.getElementById('cancel_btn_car').innerHTML = 'Cancelar';
+            
+
             const input_cant = document.getElementById('input_cant');
             input_cant.max = stock;
             const modalCantidad = new bootstrap.Modal('#modalCantidad');
 
 
             await modalCantidad.show();
-            input_cant.focus();
+            setTimeout(() => {
+                input_cant.focus();
+            }, 500);
         }
 
         async function quitarDelCarrito(id) {
@@ -194,6 +205,5 @@ $resultado = mysqli_query($conexion, $sql);
                 })
             });
 
-            location.reload();
         }
     </script>
