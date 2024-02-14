@@ -11,6 +11,7 @@
                 <ion-icon name="key"></ion-icon><input type="password" name = "password" placeholder="Contraseña..." required><br><br>
                 <br>
                 <input type="submit" value = "Iniciar">
+                <br><br>
             </form>
             
             <a class='ewk_banner_link' href='index.php?pagina=crearcuenta'>Registrarte</a>
