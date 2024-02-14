@@ -26,7 +26,7 @@
         <section class="info">
             <h2>Sistema que gestiona venta de Pasteles</h2>
             <hr>
-            <form action="../Model/Mvali.php" method = "post">
+            <form action="./Model/Mvali.php" method = "post">
                 <h2>Login</h2>
                 <ion-icon name="person"></ion-icon><input type="email" name = "email" placeholder="Email..." required> <br><br>
                 <ion-icon name="key"></ion-icon><input type="password" name = "password" placeholder="Contraseña..." required><br><br>
@@ -34,7 +34,7 @@
                 <input type="submit" value = "Iniciar">
             </form>
             
-            <a class='ewk_banner_link' href='controller/Controller.php?var1=2'>Registrarte</a>
+            <a class='ewk_banner_link' href='index.php?pagina=crearcuenta'>Registrarte</a>
         </section>
     </main>
     <script src="Login.js"></script>
