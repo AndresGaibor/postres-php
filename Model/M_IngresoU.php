@@ -36,13 +36,15 @@ if(mysqli_num_rows($resultado_verificar) > 0) {
     $ejecutar = mysqli_query($conexion, $sql_insert_usuario);
     
     if($ejecutar) {
+        $id_usuario = mysqli_insert_id($conexion);
+
         session_start();
 
         $_SESSION['sesion_iniciada'] = "iniciado";
         // nombre
-        $fila = mysqli_fetch_assoc($ejecutar);
-        $_SESSION['nombre'] = $fila['nombre'];
-        $_SESSION['esAdmin'] = $fila['rol'] == "admin" ? true : false;
+        // $fila = mysqli_fetch_assoc($ejecutar);
+        $_SESSION['nombre'] = $nombre;
+        $_SESSION['esAdmin'] = false;
         header("Location: ../index.php?pagina=productos");
     } else {
         echo 'No se agregó';
