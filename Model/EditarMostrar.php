@@ -1,5 +1,5 @@
 <?php
-include ("./config/config.php");
+include ("../config/config.php");
 $sql ="SELECT * from producto";
 $resultado = mysqli_query($conexion, $sql);
 while ($mostrar = mysqli_fetch_array($resultado)) {
