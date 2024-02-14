@@ -9,6 +9,8 @@ if (isset($_GET['pagina'])) {
 
 // se obtiene la cantidad de productos en el carrito
 
+session_start();
+
 if (isset($_SESSION['sesion_iniciada'])) {
     $session_iniciada = $_SESSION['session_iniciada'];
 } else {
@@ -16,12 +18,11 @@ if (isset($_SESSION['sesion_iniciada'])) {
 }
 
 if($session_iniciada) {
-    $texto_login = "Cuenta";
+    $texto_login = "Cerrar sesion";
 } else {
     $texto_login = "Iniciar en sesion";
 }
 
-session_start();
 $carrito = isset($_SESSION['carrito']) ? $_SESSION['carrito'] : array();
 $cantidad_carrito = count($carrito);
 
