@@ -39,6 +39,8 @@
         $pdf->Cell(30,10,$mostrar['subtotal'],1,0,'C', true);
         $pdf->Cell(20,10,$mostrar['iva'],1,0,'C', true);
         $pdf->Cell(30,10,$mostrar['total'],1,0,'C', true);
+
+        $pdf->Ln(10); 
     }
 
     // Salida del PDF
