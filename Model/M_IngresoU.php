@@ -11,7 +11,7 @@ error_reporting(E_ALL);
     $email = $_POST['email'];
     $telefono = $_POST['telefono'];
 
-    $sql = "INSERT INTO Usuario (nombre, apellido, direccion_id, correo, clave, telefono) VALUES ('$nombre', '$apellido', '$direccion', '$email', '$clave', '$telefono')";
+    $sql = "INSERT INTO tienda_postres (nombre, apellido, direccion_id, correo, clave, telefono) VALUES ('$nombre', '$apellido', '$direccion', '$email', '$clave', '$telefono')";
     $ejecutar = mysqli_query($conexion, $sql);
     if($ejecutar)
     header('location:../Login.html');

@@ -96,7 +96,7 @@ button{
 .ewk_banner_link {
     display: inline-block;
     padding: 10px 20px; /* Ajusta el relleno según sea necesario */
-    background-color: #4CAF50;
+    background-color: #443d3d;
     color: white;
     text-decoration: none;
     border-radius: 50%; /* Establece el radio para hacerlo circular */
@@ -104,5 +104,5 @@ button{
 }
 
 .ewk_banner_link{
-    background-color: #45a049; /* Cambia el color de fondo al pasar el cursor sobre él */
+    background-color: #443d3d; /* Cambia el color de fondo al pasar el cursor sobre él */
 }
