@@ -8,7 +8,10 @@ if(!isset($_GET['pagina'])) {
     return;
 }
 $v1 = $_GET['pagina'];
-
+$v2 =$_GET['v'];
+if($v2==1){
+    include("/Model/M_Reporte_Pedido.php");
+}
 $paginas = array();
 
 // Aqui ingresamos las paginas que vamos a utilizar
