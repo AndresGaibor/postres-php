@@ -8,8 +8,25 @@
             <label for="apellido">Apellido*</label>
             <input type="text" id="apellido" name="apellido" required>
             <br>
-            <label for="direccion">Numero de calle*</label>
-            <input type="number" id="direccion" name="direccion" min = "1" required>
+            <label for="Provincia">Provincia*</label>
+            <select id="provincia" name="provincia" required>
+                <option value="Escoja una">Escoja una</option>
+                <!-- Agrega más opciones aquí -->
+            </select>
+            <br>
+
+            <label for="Ciudad">Ciudad*</label>
+            <select id="ciudad" name="ciudad" required>
+                <option value="Escoja una">Escoja una</option>
+                <!-- Agrega más opciones aquí -->
+            </select>
+            <br>
+
+            <label for="Calle">Calle Principal*</label>
+            <select id="Calle" name="calle" required>
+                <option value="Escoja una">Escoja una</option>
+                <!-- Agrega más opciones aquí -->
+            </select>
             <br>
             <label for="email">Email*</label>
             <input type="email" id="email" name="email" required>
