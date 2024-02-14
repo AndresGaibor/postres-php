@@ -1,5 +1,5 @@
 
-  <section class="contenedor sobre-nosotros">
+<section class="contenedor sobre-nosotros">
     <h2 class="titulo">Nosotros- KATTYTA</h2>
     <div class="contendeor-sobre-nosotros">
         <img src="https://thumbs.dreamstime.com/b/ejemplo-de-clipart-una-torta-cumplea%C3%B1os-con-gradas-blanco-y-negro-las-velas-en-dise%C3%B1o-oval-del-vector-149779142.jpg" alt="" class=" imagen-about-us"> 
@@ -10,8 +10,8 @@
             <p>Tenemos experiencia laboral y conocemos los productos del mercado, por lo que siempre trabajamos con los materiales de la mejor calidad y gracias a nuestro trabajo impecable jamás dejamos a un cliente insatisfecho.</p>
         </div>
     </div>
-  </section>
-  <main>
+</section>
+<main>
     <br>
     <section class = "Productos">
       <h1 style="color: #09102a; text-align: center;"><b>Postres Destacados</b></h1>
@@ -77,11 +77,5 @@
                 </div>
             </div>    
         </div>
-    </div>
     </section>
-
-
-
-
-
-  </main>
+</main>
