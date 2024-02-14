@@ -43,6 +43,9 @@ $cantidad_carrito = count($carrito);
                 <li class="nav-item mt-1">
                     <a href="./?pagina=login" class="nav-link <?php echo $pagina == 3 ? 'active' : ''; ?>" aria-current="page"><?php echo $texto_login; ?></a>
                 </li>
+                <li class="nav-item mt-1">
+                    <a href="./?pagina=reportes" class="nav-link <?php echo $pagina == 'reportes' ? 'active' : ''; ?>" aria-current="page">Reportes</a>
+                </li>
                 <li class="nav-item">
                     <a href="./?pagina=4" class="nav-link" aria-current="page">
                         <button type="button" class="d-flex btn w-auto btn-primary position-relative">
