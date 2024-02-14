@@ -19,7 +19,7 @@ if (isset($_GET['success'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 1</title>    
-  <link rel="stylesheet" href="../css/holaaa.css">
+  <link rel="stylesheet" href="../Estilos/holaaa.css">
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css" />
   <!-- UIkit JS -->
@@ -37,7 +37,11 @@ if (isset($_GET['success'])) {
           <legend class="uk-legend">Datos del producto</legend>
           <br><br>
           <label class="uk-form-label" for="nombre">ID: </label>
+<<<<<<< HEAD
           <input class="uk-input" type="text" id="id" aria-label="" required  name="idp" value="<?php echo $mostrar['id']; ?>" readonly> 
+=======
+          <input class="uk-input" type="text" id="nombre" aria-label="" required  name="id" value="<?php echo $mostrar['id']; ?>" readonly disabled> 
+>>>>>>> dd00853b4e40361db1666a55476577aab37b0456
           <br><br>
           <label class="uk-form-label" for="nombre">Nombre: </label>
           <input class="uk-input" type="text" id="nombre_producto" aria-label="Duración del vuelo" required  name="nombre_producto" value="<?php echo $mostrar['nombre_producto']; ?>"> 
@@ -53,7 +57,11 @@ if (isset($_GET['success'])) {
           <input type="text" class="uk-input" name="img_url" value="<?php echo $mostrar['img_url']; ?>" required>
           <br><br>
           <div class="uk-margin">
+<<<<<<< HEAD
             <input id="buton" type="submit" class="ui primary button btn" value="Modificar">
+=======
+            <input id="buton" type="submit" class="ui primary button" value="Modificar">
+>>>>>>> dd00853b4e40361db1666a55476577aab37b0456
           </div>
         </fieldset>
       </form>

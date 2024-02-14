@@ -37,7 +37,7 @@ if (isset($_GET['success'])) {
           <legend class="uk-legend">Datos del producto</legend>
           <br><br>
           <label class="uk-form-label" for="nombre">ID: </label>
-          <input class="uk-input" type="text" id="nombre" aria-label="" required  name="id" value="<?php echo $mostrar['id']; ?>" readonly> 
+          <input class="uk-input" type="text" id="nombre" aria-label="" required  name="id" value="<?php echo $mostrar['id']; ?>" readonly disabled> 
           <br><br>
           <label class="uk-form-label" for="nombre">Nombre: </label>
           <input class="uk-input" type="text" id="nombre_categoria" aria-label="Duración del vuelo" required  name="nombre_categoria" value="<?php echo $mostrar['nombre_categoria']; ?>"> 

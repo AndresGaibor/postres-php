@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-if(!isset($_GET['pagina'])) {
+if (!isset($_GET['pagina'])) {
     // echo "No existe la pagina";
     $v1 = 0;
 } else {
@@ -24,15 +24,14 @@ $paginas['terminarpedido'] = "V_TerminarPedido";
 $paginas['reportes'] = "V_ALL_Reportes";
 $paginas['ayuda'] = "V_Ayuda";
 $paginas['emcategoria'] = "v_eliminar_modificar_categoria";
-// $paginas['reportes'] = "V_reporte_producto_cantidad";
+$paginas['elimod'] = "v_elimainar_producto";
+$paginas['buscar'] = "V_Buscar_Producto";
 
 
-if(!array_key_exists($v1, $paginas))  {
+if (!array_key_exists($v1, $paginas)) {
     echo "No existe la pagina";
     return;
 }
 
 $paginaActual = $paginas[$v1];
-include('./View/'.$paginaActual.'.php');
-
-?>
+include('./View/' . $paginaActual . '.php');
