@@ -10,7 +10,7 @@
 </head>
 <body>
     <ul class="list-group">
-        <li class="list-group-item"><a href="/controller/hdl_rp.php?v=1">Reportes de pedidos</a></li>
+        <li class="list-group-item"><a href="/Model/M_Reporte_Pedido.php">Reportes de pedidos</a></li>
         <li class="list-group-item"><a href="">Reporte x</a></li>
         <li class="list-group-item"><a href="">Reporte x</a></li>
         <li class="list-group-item"><a href="">Reporte x</a></li>

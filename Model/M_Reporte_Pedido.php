@@ -2,7 +2,7 @@
     include("./config/config.php");
     include("./View/V_Plantilla.php");
 
-    $sql = "SELECT * FROM Pedido";
+    $sql = "SELECT*FROM Pedido";
     $resultado = mysqli_query($conexion, $sql);
 
     // Creación del objeto de la clase heredada
