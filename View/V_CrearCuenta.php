@@ -9,7 +9,7 @@
             <input type="text" id="apellido" name="apellido" required>
             <br>
             <label for="direccion">Numero de calle*</label>
-            <input type="text" id="direccion" name="direccion" required>
+            <input type="number" id="direccion" name="direccion" min = "1" required>
             <br>
             <label for="email">Email*</label>
             <input type="email" id="email" name="email" required>
