@@ -2,6 +2,7 @@
 include('../config/config.php');
 $email = $_POST['email'];
 $clave = $_POST['password'];
+$claveSha1 = sha1($clave);
 $sql = "SELECT * FROM usuario WHERE correo = '$email' AND clave = '$clave'";
 $resultado = mysqli_query($conexion, $sql);
 session_start();

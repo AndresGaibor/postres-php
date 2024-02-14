@@ -15,7 +15,7 @@ if ($provincia != '') {
     $sql2 = "SELECT * FROM Ciudad WHERE provincia_id = $provincia";
     $resultado2 = mysqli_query($conexion, $sql2);
 } else {
-    echo 'No hay provincia seleccionada';
+    // echo 'No hay provincia seleccionada';
 }
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

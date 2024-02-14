@@ -118,3 +118,5 @@ INSERT INTO Pedido(usuario_id, fecha_pedido, subtotal, iva, total) VALUES(1, '20
 INSERT INTO DetallePedido(pedido_id, producto_id, cantidad, precio, iva) VALUES(1, 1, 1, 20.00, 2.00);
 -- actualizar el stock 
 UPDATE Producto SET stock = stock - 1 WHERE id = 1;
+
+SELECT * FROM usuario;
