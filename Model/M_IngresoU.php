@@ -40,7 +40,7 @@ if(mysqli_num_rows($resultado_verificar) > 0) {
 
         $_SESSION['sesion_iniciada'] = "iniciado";
         // nombre
-        $fila = mysqli_fetch_assoc($resultado);
+        $fila = mysqli_fetch_assoc($ejecutar);
         $_SESSION['nombre'] = $fila['nombre'];
         $_SESSION['esAdmin'] = $fila['rol'] == "admin" ? true : false;
         header("Location: ../index.php?pagina=productos");
