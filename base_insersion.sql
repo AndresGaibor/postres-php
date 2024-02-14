@@ -13,3 +13,6 @@ INSERT INTO Producto(nombre_producto, precio, stock, img_url) VALUES('Postre de 
 INSERT INTO Producto(nombre_producto, precio, stock, img_url) VALUES('Alfajores', 45.00, 10, 'https://images.hola.com/imagenes/cocina/noticiaslibros/20220509209297/recetas-postres-franceses/1-84-447/interior-postres-adobe-a.jpg');
 -- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTZpSYY9EkFIEu9YAGEKCYazICZOahqPiHbj8tkOI2qg&s
 INSERT INTO Producto(nombre_producto, precio, stock, img_url) VALUES('Copa de oreo', 50.00, 10, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTZpSYY9EkFIEu9YAGEKCYazICZOahqPiHbj8tkOI2qg&s');
+--INSERTAR CATEGORIAS
+INSERT INTO Categoria(nombre_categoria) VALUES('Helado');
+INSERT INTO Categoria(nombre_categoria) VALUES('Galleta');
