@@ -29,7 +29,7 @@ if($session_iniciada) {
 
 
 ?>
-<nav class="navbar navbar-expand-sm bg-body-tertiary">
+<nav class="navbar navbar-expand-sm bg-body-tertiary mb-2">
     <div class="container-fluid">
         <a href="./" class="navbar-brand">Kattyta <small>panaderia</small></a>
         <div class="collapse navbar-collapse">
@@ -39,6 +39,9 @@ if($session_iniciada) {
                 </li>
                 <li class="nav-item mt-1">
                     <a href="./?pagina=productos" class="nav-link <?php echo $pagina == 'productos' ? 'active' : ''; ?>" aria-current="page">Productos</a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="./?pagina=ingresar_admin" class="nav-link <?php echo $pagina == 'ingresar_admin' ? 'active' : ''; ?>" aria-current="page">Ingresar admin</a>
                 </li>
                 <li class="nav-item mt-1">
                     <a href="./?pagina=3" class="nav-link <?php echo $pagina == 3 ? 'active' : ''; ?>" aria-current="page"><?php echo $texto_login; ?></a>

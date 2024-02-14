@@ -44,9 +44,10 @@ CREATE TABLE Producto(
     nombre_producto varchar(50),
     precio DECIMAL(10,2),
     stock int,
-    img_url varchar(150),
+    img_url varchar(500),
     PRIMARY KEY (id)
 );
+
 
 CREATE TABLE Ingrediente(
     id int AUTO_INCREMENT,

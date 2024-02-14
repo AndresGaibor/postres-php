@@ -6,4 +6,5 @@ $stock=$_POST['cantidad'];
 $img=$_POST['imagen'];
 $sql="INSERT INTO producto(nombre_producto,precio,stock,img_url)VALUES('$nombre',$precio,$stock,'$img')";
 mysqli_query($conexion,$sql);
+header('Location: ../index.php?pagina=productos');
 ?>
