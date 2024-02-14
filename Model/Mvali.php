@@ -10,7 +10,7 @@ $clave = $_POST['password'];
 $claveSha1 = sha1($clave);
 // echo $claveSha1;
 return;
-$sql = "SELECT * FROM usuario WHERE correo = '$email' AND clave = '$claveSha1'";
+$sql = "SELECT * FROM usuario WHERE correo = '$email' AND clave = '$clave'";
 $resultado = mysqli_query($conexion, $sql);
 session_start();
 

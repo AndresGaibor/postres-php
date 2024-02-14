@@ -8,7 +8,7 @@ include('../config/config.php');
 // Obtener valores del formulario
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
-$clave = sha1($_POST['clave']);
+$clave = $_POST['clave'];
 $email = $_POST['email'];
 $telefono = $_POST['telefono'];
 $ciudad = $_POST['ciudad'];
