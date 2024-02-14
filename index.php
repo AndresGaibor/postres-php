@@ -6,9 +6,9 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/Inicio.css">
     <link rel="stylesheet" href="Login.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="Inicio.css">
     <link rel="stylesheet" href="./Estilos/Registro.css">
     <link rel="stylesheet" href="./Estilos/Ayuda.css">
     <title>PASTELERIA | LOGIN </title>

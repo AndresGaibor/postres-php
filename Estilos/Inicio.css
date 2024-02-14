@@ -1,0 +1,223 @@
+
+/* Estilos para la sección de "Postres Destacados" */
+.Productos {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.Productos h1 {
+  color: #09102a;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.galeria-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagen-port {
+  width: 30%;
+  margin: 0 15px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagen-port img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.imagen-port:hover img {
+  transform: scale(1.1);
+}
+
+.hover-galeria {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 16, 42, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imagen-port:hover .hover-galeria {
+  opacity: 1;
+}
+
+.hover-galeria img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.hover-galeria p {
+  font-size: 18px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .imagen-port {
+      width: 45%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .imagen-port {
+      width: 100%;
+      margin: 0 0 30px;
+  }
+
+  .contenido-texto,
+  .imagen-about-us {
+      width: 100%;
+  }
+
+  .contenedor-sobre-nosotros {
+      flex-direction: column;
+  }
+}
+
+footer{
+  background: #414141;
+  padding: 60px 0px 30px 0px;
+  margin: auto;
+  overflow: hidden;
+  color: #ffffff;
+}
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin:auto;
+  padding-bottom: 50px;
+  font-style:normal;
+  
+}
+.content-foo{
+  text-align: center;
+}
+.content-foo p{
+  color: #ccc;
+}
+.content-foo h2{
+  color: #fff;
+  border-bottom: 4px solid #5d73c4;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
+.titulo-final{
+  text-align: center;
+  font-size: 24px;
+  margin: 15px;
+  color:#e2d4d4;
+}
+.redes {
+  text-align: center;
+}
+
+/* Estilos específicos para cada clase de imagen */
+.facebook img {
+  width: 50px; /* Ancho deseado para la imagen de Facebook */
+  height: auto;
+  cursor: pointer;
+}
+
+.tiktok img {
+  width: 50px; /* Ancho deseado para la imagen de TikTok */
+  height: auto;
+  cursor: pointer;
+}
+
+.imsta img {
+  width: 50px; /* Ancho deseado para la imagen de Instagram */
+  height: auto;
+  
+  cursor: pointer;
+}
+.youtube img{
+  width: 50px; /* Ancho deseado para la imagen de Instagram */
+  height: auto;
+  cursor: pointer;
+  
+}
+/* Estilo para que las imágenes estén en línea una al lado de la otra */
+.redes div {
+  display: inline-block;
+  margin-right: 90px; /* Espacio horizontal entre las imágenes */
+  margin-left: 90px;
+}
+h4{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  
+}
+.Autor{
+  background: #8a8787;
+  overflow: hidden;
+  color: #fff;
+  font-size: small;
+}
+.icono{
+  width: 100px; /* Ancho deseado para el icono */
+  height: auto; /* Altura automática para mantener la proporción */
+  position: absolute; /* Posición absoluta para fijar la imagen */
+  top: 20px; /* Distancia desde la parte superior */
+  left: 20px; /* Distancia desde la izquierda */
+}
+.Nombre-empresa{
+  position: absolute; /* Posición absoluta para fijar la imagen */
+  top: 28px; /* Distancia desde la parte superior */
+  left: 130px
+}
+
+.contendeor-sobre-nosotros{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+
+.sobre-nosotros .contenido-texto{
+  width: 45%;
+}
+
+.contenido-texto h3{
+  margin-bottom: 15px;
+}
+
+.contenido-texto h3 span{
+  background:#09102a;
+  color:#fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  padding: 4px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  margin-right: 5px;
+}
+.contenido-texto p{
+  padding: 0 0 30px 30px;
+  font-weight: 300%;
+  text-align: justify;
+}
+.titulo{
+  text-align: center;
+  color: #09102a;
+  padding: 30px;
+}
+
+img{
+  width: 25%;
+  border-radius: 45px;
+}
