@@ -16,14 +16,14 @@
             </div>
         </div>
         <div class="item">
-            <img src="https://acortar.link/AoW8my" alt="Imagen 1">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilNEh2gHLr_-kFkhEFO9ni3nMVrs1m3dyxUpMNMraQ_-vIzPcQuAvEEtE4MR5eWplHnwlnzRYAJJca0TrQpbfd6xhItYj9rVPjMrJyETgMlqvEBLM9RTU4pfMPWFuHOes2Louvu00oXHINwu9iXRv01DcHpW_M3xA3pSnkEUj6f9c1G4meOoQNiTL0_4s/s320/2.PNG" alt="Imagen 1">
             <div class="descripcion">
                 <h2>Compra de postres</h2>
                 <p>Puedes generar una compra de postre desde el listar de productos, esto para garantizar que el postre exita sin necesidad de la busqueda.</p>
             </div>
         </div>
         <div class="item">
-            <img src="https://acortar.link/823rJZ" alt="Imagen 1">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQfyjzoJPtFZiI_NoNAby7sNTHtljKAY6hUWheOq7g4_jWIBrcwY2OmpizSaIWRsinXywScW0T1e39ZI4vmRcc56EFRa6OzHD60XZLr7lC20AJHR0ougnxywRSBf7Z6L2Bf1bo0hlfCOUK2-3qcEDRDvMBsMxovWCrA4Ryau1Q8SHLvC8wRcbXYoLZXYA/s320/1.PNG" alt="Imagen 1">
             <div class="descripcion">
                 <h2>Menú de Opciones</h2>
                 <p>Este menú contiene opciones que simplifica el sistema, el iniciar sesión, postres, reportes y hasta la misma ayuda están a disposición del usuario.</p>
