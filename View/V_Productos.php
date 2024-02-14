@@ -4,8 +4,14 @@
         <div class="container col-6">
             <?php
             if (isset($_SESSION['esAdmin']) && $_SESSION['esAdmin'])
-                include('./View/V_Ingresar_Admin.php');
-                include('./View/V_Btn_Eli_Edi.php');
+                ?>
+                <center>
+                <div class="container" style="display: inline-block;"> 
+                    <?php include('./View/V_Ingresar_Admin.php'); ?>
+                    <?php include('./View/V_Btn_Eli_Edi.php'); ?>
+                </div>
+                </center>
+                <?php
             ?>
 
             <?php include('./View/V_Productos_Lista.php'); ?>
