@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <center><h1> Mostrar datos del estudiante</h1> 
+    <center><h1> Producto</h1> 
     <table border="1" >
     <th >Id</th>
     <th >Nombre</th>
