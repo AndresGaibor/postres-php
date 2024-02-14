@@ -16,13 +16,13 @@
                                 <?php echo $mostrar['nombre_categoria']; ?>
                             </a>
                     </div>
-                        <div class="list-group list-group-item">
-                            <a class="active" href="./?pagina=productos">
-                                Todos
-                            </a>
-                    </div>
                     <?php endwhile; ?>
-                    </div>
+                    <div class="list-group list-group-item">
+                        <a class="active" href="./?pagina=productos">
+                            Todos
+                        </a>
+                </div>
+                </div>
         </div>
         <div class="container col-6">
             <?php
