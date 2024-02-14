@@ -14,7 +14,7 @@
     $pdf->SetFont('Arial','B',16);
 
     // Título del informe
-    $pdf->Cell(0,10,'Informe de Pedidos',0,1,'C');
+    $pdf->Cell(0,10,'Informe de Usuarios',0,1,'C');
     $pdf->Ln(10); // Añadir espacio después del título
 
     // Encabezados de la tabla con fondo gris
