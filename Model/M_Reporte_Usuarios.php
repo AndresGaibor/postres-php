@@ -2,7 +2,7 @@
     include("../config/config.php");
     include("../View/V_Plantilla.php");
 
-    $sql = "SELECT*FROM Pedido";
+    $sql = "SELECT*FROM usuario";
     $resultado = mysqli_query($conexion, $sql);
 
     // Creación del objeto de la clase heredada
@@ -20,11 +20,11 @@
     // Encabezados de la tabla con fondo gris
     $pdf->SetFillColor(200, 220, 255);
     $pdf->Cell(30,10,'ID',1,0,'C', true);
-    $pdf->Cell(50,10,'USUARIO ID',1,0,'C', true);
-    $pdf->Cell(50,10,'FECHA PEDIDO',1,0,'C', true);
-    $pdf->Cell(30,10,'SUBTOTAL',1,1,'C', true);
-    $pdf->Cell(30,10,'IVA',1,1,'C', true);
-    $pdf->Cell(30,10,'TOTAL',1,1,'C', true);
+    $pdf->Cell(50,10,'NOMBRE',1,0,'C', true);
+    $pdf->Cell(50,10,'APELLIDO',1,0,'C', true);
+    $pdf->Cell(30,10,'NUMERO CALLE',1,1,'C', true);
+    $pdf->Cell(30,10,'CORREO',1,1,'C', true);
+    $pdf->Cell(30,10,'TELEFONO',1,1,'C', true);
 
     // Restablecer tipo de fuente para los datos
     $pdf->SetFont('Arial','',12);
@@ -34,11 +34,11 @@
         // Datos de la tabla
         $pdf->SetFillColor(200, 220, 255);
         $pdf->Cell(30,10,$mostrar['id'],1,0,'C', true);
-        $pdf->Cell(50,10,$mostrar['usuario_id'],1,0,'C', true);
-        $pdf->Cell(50,10,$mostrar['fecha_pedido'],1,0,'C', true);
-        $pdf->Cell(30,10,$mostrar['subtotal'],1,1,'C', true);
-        $pdf->Cell(30,10,$mostrar['iva'],1,1,'C', true);
-        $pdf->Cell(30,10,$mostrar['total'],1,1,'C', true);
+        $pdf->Cell(50,10,$mostrar['nombre'],1,0,'C', true);
+        $pdf->Cell(50,10,$mostrar['apellido'],1,0,'C', true);
+        $pdf->Cell(30,10,$mostrar['direccion_id'],1,1,'C', true);
+        $pdf->Cell(30,10,$mostrar['correo'],1,1,'C', true);
+        $pdf->Cell(30,10,$mostrar['telefono'],1,1,'C', true);
     }
 
     // Salida del PDF

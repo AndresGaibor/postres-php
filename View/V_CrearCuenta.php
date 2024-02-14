@@ -8,7 +8,7 @@
             <label for="apellido">Apellido*</label>
             <input type="text" id="apellido" name="apellido" required>
             <br>
-            <label for="direccion">Dirección*</label>
+            <label for="direccion">Numero de calle*</label>
             <input type="text" id="direccion" name="direccion" required>
             <br>
             <label for="email">Email*</label>
