@@ -13,13 +13,17 @@ while ($mostrar = mysqli_fetch_array($resultado)) {
 
             
         <td>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
             <a href="../Model/editar.php?id=<?php echo $mostrar['id']; ?>">
-               <center> <img src="../img/lapiz.png" alt="Editar" width="20" height="20"></center>
+            <center>  <i class="fas fa-pencil-alt"></i></center>
             </a>
         </td>
         <td>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
             <a href="../Model/eliminar.php?<?php echo $mostrar['id']; ?>">
-               <center> <img src="../img/eliminar.png" alt="Eliminar" width="20" height="20"></center>
+              <center> <i class="fas fa-trash-alt"></i></center>
             </a>
         </td>
     </tr>
