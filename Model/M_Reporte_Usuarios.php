@@ -11,7 +11,7 @@
     $pdf->AddPage();
     
     // Establecer un tipo de fuente más atractivo y grande
-    $pdf->SetFont('Arial','B',16);
+    $pdf->SetFont('Arial','B',10);
 
     // Título del informe
     $pdf->Cell(0,10,'Informe de Usuarios',0,1,'C');
@@ -22,8 +22,6 @@
     $pdf->Cell(30,10,'ID',1,0,'C', true);
     $pdf->Cell(50,10,'NOMBRE',1,0,'C', true);
     $pdf->Cell(50,10,'APELLIDO',1,0,'C', true);
-    $pdf->Cell(30,10,'NUMERO CALLE',1,1,'C', true);
-    $pdf->Cell(30,10,'CORREO',1,1,'C', true);
     $pdf->Cell(30,10,'TELEFONO',1,1,'C', true);
 
     // Restablecer tipo de fuente para los datos
@@ -36,8 +34,6 @@
         $pdf->Cell(30,10,$mostrar['id'],1,0,'C', true);
         $pdf->Cell(50,10,$mostrar['nombre'],1,0,'C', true);
         $pdf->Cell(50,10,$mostrar['apellido'],1,0,'C', true);
-        $pdf->Cell(30,10,$mostrar['direccion_id'],1,1,'C', true);
-        $pdf->Cell(30,10,$mostrar['correo'],1,1,'C', true);
         $pdf->Cell(30,10,$mostrar['telefono'],1,1,'C', true);
     }
 
