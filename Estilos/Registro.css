@@ -1,7 +1,7 @@
 /* styles.css */
 
 /* Estilos generales */
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -10,9 +10,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 
-.container {
+.container-deregistro {
     width: 400px;
     padding: 20px;
     background-color: #fff;
@@ -20,30 +20,30 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.container-deregistro h2 {
     text-align: center;
 }
 
-form {
+.container-deregistro form {
     display: flex;
     flex-direction: column;
 }
 
-label {
+.container-deregistro label {
     margin-bottom: 8px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="tel"] {
+.container-deregistro input[type="text"],
+.container-deregistro input[type="email"],
+.container-deregistro input[type="password"],
+.container-deregistro input[type="tel"] {
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input[type="submit"] {
+.container-deregistro input[type="submit"] {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -52,6 +52,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.container-deregistro input[type="submit"]:hover {
     background-color: #45a049;
 }

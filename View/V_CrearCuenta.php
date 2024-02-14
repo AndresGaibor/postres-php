@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro | Usuario</title>
-    <link rel="stylesheet" href="../Estilos/Registro.css">
-</head>
-<body>
-    <div class="container">
+
+    <div class="container-deregistro mx-auto">
         <h2>Registro de Usuario</h2>
-        <form action="../Model/M_IngresoU.php" method="post">
+        <form action="./Model/M_IngresoU.php" method="post">
             <label for="nombre">Nombre*</label>
             <input type="text" id="nombre" name="nombre" required>
             <br>
@@ -28,8 +20,6 @@
             <label for="telefono">Teléfono*</label>
             <input type="tel" id="telefono" name="telefono" required>
             <br>
-            <input type="submit" name="enviar" value="Enviar">
+            <input type="submit" name="enviar" value="Registrar">
         </form>
     </div>
-</body>
-</html>
