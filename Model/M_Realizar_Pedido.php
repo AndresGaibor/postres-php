@@ -32,6 +32,8 @@ $fechaactual = date('Y-m-d');
 $sql_pedido = "INSERT INTO Pedido(usuario_id, fecha_pedido, total) VALUES($id_usuario, '$fechaactual', $subtotal);";
 $resultado_pedido = mysqli_query($conexion, $sql_pedido);
 
+include('../model/M_Correo_Pedido.php');
+
 $id_pedido = mysqli_insert_id($conexion);
 
 foreach ($carrito as $producto) {

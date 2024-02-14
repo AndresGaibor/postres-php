@@ -6,7 +6,13 @@ $cantidad_productos_por_pagina = 2;
 
 $limit = $cantidad_productos_por_pagina;
 
-$sql1 = "SELECT COUNT(*) as total FROM Producto";
+// categoria from get
+$categoria = isset($_GET['categoria']) ? $_GET['categoria'] : null;
+
+$sql1 = "SELECT COUNT(*) as total FROM Producto WHERE enabled = 1";
+if ($categoria) {
+    $sql1 = "SELECT COUNT(*) as total FROM Producto INNER JOIN ProductoCategoria ON Producto.id = ProductoCategoria.producto_id WHERE ProductoCategoria.categoria_id = $categoria AND Producto.enabled = 1";
+}
 $resultado1 = mysqli_query($conexion, $sql1);
 
 $fila = mysqli_fetch_array($resultado1);
@@ -38,10 +44,32 @@ function existeEnCarrito($id)
     }
     return false;
 }
+$esAdmin = isset($_SESSION['esAdmin']) ? $_SESSION['esAdmin'] : false;
 
 $offset = ($start - 1) * $limit;
 
-$sql = "SELECT * FROM Producto ORDER BY id DESC LIMIT $limit OFFSET $offset";
+// CREATE TABLE Producto(
+//     id int AUTO_INCREMENT,
+//     enabled BOOLEAN DEFAULT TRUE,
+//     nombre_producto varchar(50),
+//     precio DECIMAL(10,2),
+//     stock int,
+//     img_url varchar(500),
+//     PRIMARY KEY (id)
+// );
+// CREATE TABLE ProductoCategoria(
+//     id int AUTO_INCREMENT,
+//     producto_id int,
+//     categoria_id int,
+//     PRIMARY KEY (id),
+//     FOREIGN KEY (producto_id) REFERENCES Producto(id),
+//     FOREIGN KEY (categoria_id) REFERENCES Categoria(id)
+// );
+
+$sql = "SELECT * FROM Producto where enabled = 1 ORDER BY id DESC LIMIT $limit OFFSET $offset";
+if ($categoria) {
+    $sql = "SELECT * FROM Producto INNER JOIN ProductoCategoria ON Producto.id = ProductoCategoria.producto_id WHERE ProductoCategoria.categoria_id = $categoria AND Producto.enabled = 1 ORDER BY Producto.id DESC LIMIT $limit OFFSET $offset";
+}
 $resultado = mysqli_query($conexion, $sql);
 
 ?>
@@ -102,7 +130,14 @@ $resultado = mysqli_query($conexion, $sql);
                             </div>
                         </div>
 
-
+                        <a class="btn btn-info mb-1 <?php echo $esAdmin ? '' : 'd-none'; ?>
+                        " href="./Model/editar.php?id=<?php echo $fila['id']; ?>">
+                            <center>  Editar <i class="fas fa-pencil-alt"></i></center>
+                        </a>
+                        <a class="btn btn-danger mb-1 <?php echo $esAdmin ? '' : 'd-none'; ?>
+                        " href="./Model/delete.php?id=<?php echo $fila['id']; ?>">
+                             <center>Eliminar <i class="fas fa-trash-alt"></i></center>
+                        </a>
                         <button href="#" id="producto-<?php echo $fila['id'] ?>" onclick="<?php echo existeEnCarrito($fila['id']) ? 'quitarDelCarrito(' . $fila['id'] . ')' : 'addToCart(' . $fila['id'] . ', \'' . $fila['nombre_producto'] . '\', ' . $fila['precio'] . ', '.$fila['stock'].');' ?>" class="btn w-auto btn-<?php echo existeEnCarrito($fila['id']) ? 'danger ' : 'warning '; echo $fila['stock'] == 0 ? 'disabled' : ''; ?>
                         "><?php echo existeEnCarrito($fila['id']) ? 'Quitar' : 'Agregar carrito'; ?>
                             <i class="fa-solid fa-cart-shopping fa-sm"></i></button>

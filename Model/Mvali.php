@@ -14,6 +14,7 @@ if(mysqli_num_rows($resultado) > 0) {
     $fila = mysqli_fetch_assoc($resultado);
     $_SESSION['id_usuario'] = $fila['id'];
     $_SESSION['nombre'] = $fila['nombre'];
+    $_SESSION['correo'] = $fila['correo'];
     $_SESSION['esAdmin'] = $fila['rol'] == "admin" ? true : false;
 
     if(isset($_SESSION['terminandocompra']) && $_SESSION['terminandocompra'] == true){

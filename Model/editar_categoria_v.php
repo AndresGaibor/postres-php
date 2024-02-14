@@ -11,10 +11,10 @@ $sql = "UPDATE categoria SET nombre_categoria='$Nombre' WHERE id='$Id'";
 $regre = mysqli_query($conexion, $sql);
 
 if ($regre && mysqli_affected_rows($conexion) > 0) {
-    echo "<script>alert('Datos actualizados correctamente'); window.location.href = '../View/v_eliminar_modificar_categoria.php';</script>";
+    echo "<script>alert('Datos actualizados correctamente'); window.location.href = '../index.php?pagina=emcategoria';</script>";
     exit();
 } else {
-    echo "<script>alert('Error: El ID no existe.'); window.location.href = '../View/v_eliminar_modificar_categoria.php';</script>";
+    echo "<script>alert('Error: El ID no existe.'); window.location.href = '../index.php?pagina=emcategoria';</script>";
     exit();
 }
 ?>

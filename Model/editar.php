@@ -30,30 +30,30 @@ if (isset($_GET['success'])) {
 </head>
 <body>
   <br><br><br><br>
-  <div class="uk-card uk-card-hover" id="contenedorForm" >
+  <div class="uk-card uk-card-hover" id="contenedorForm" style="padding: 2rem;" >
     <div class="formulario" >
       <form class="ui form" action="../Model/editar_v.php" method="post" >
         <fieldset class="uk-fieldset">
           <legend class="uk-legend">Datos del producto</legend>
           <br><br>
           <label class="uk-form-label" for="nombre">ID: </label>
-          <input class="uk-input" type="text" id="nombre" aria-label="" required  name="id" value="<?php echo $mostrar['id']; ?>" readonly> 
+          <input class="uk-input" type="text" id="id" aria-label="" required  name="idp" value="<?php echo $mostrar['id']; ?>" readonly> 
           <br><br>
           <label class="uk-form-label" for="nombre">Nombre: </label>
           <input class="uk-input" type="text" id="nombre_producto" aria-label="Duración del vuelo" required  name="nombre_producto" value="<?php echo $mostrar['nombre_producto']; ?>"> 
           <br><br>
           <label class="uk-form-label" for="nombre">Precio: </label>
-          <input class="uk-input" type="text" id="precio" aria-label="" required  name="precio" value="<?php echo $mostrar['precio']; ?>"> 
+          <input class="uk-input" min="0" type="text" id="precio" aria-label="" required  name="precio" value="<?php echo $mostrar['precio']; ?>"> 
           <br><br>
           <label class="uk-form-label" for="nombre">Stock: </label>
-          <input class="uk-input" type="text" id="stock" aria-label="" required  name="stock" value="<?php echo $mostrar['stock']; ?>"> 
+          <input class="uk-input" min="0" type="text" id="stock" aria-label="" required  name="stock" value="<?php echo $mostrar['stock']; ?>"> 
           <br><br>
          
           <label class="uk-form-label" for="nombre">Ingrese el url de la imagen </label>
-          <input type="text" name="img_url">
+          <input type="text" class="uk-input" name="img_url" value="<?php echo $mostrar['img_url']; ?>" required>
           <br><br>
-          <div class="uk-margin">s
-            <input id="buton" type="submit" class="ui primary button" value="Modificar">
+          <div class="uk-margin">
+            <input id="buton" type="submit" class="ui primary button btn" value="Modificar">
           </div>
         </fieldset>
       </form>

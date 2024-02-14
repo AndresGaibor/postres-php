@@ -1,3 +1,11 @@
+<?php 
+include("./Config/config.php");
+
+// categorias
+$sql = "SELECT * FROM Categoria";
+$resultado = mysqli_query($conexion, $sql);
+
+?>
 <div class="container">
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary w-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -59,9 +67,13 @@
                         <br>
                         <label for="">Seleccione la categoria:</label>
                         <select  class="form-control"  name="categoria">
-                            <option value="1">Tortas</option>
+                            <?php while($fila = mysqli_fetch_assoc($resultado)) : ?>
+                                <option value="<?php echo $fila['id']; ?>"><?php echo $fila['nombre_categoria']; ?></option>
+                            <?php endwhile; ?>
+
+                            <!-- <option value="1">Tortas</option>
                             <option value="2">Helado</option>
-                            <option value="3">Galleta</option>
+                            <option value="3">Galleta</option> -->
                         </select>
                         <br>
                     </div>

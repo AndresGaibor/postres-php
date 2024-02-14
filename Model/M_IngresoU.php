@@ -45,7 +45,10 @@ if(mysqli_num_rows($resultado_verificar) > 0) {
         // $fila = mysqli_fetch_assoc($ejecutar);
         $_SESSION['nombre'] = $nombre;
         $_SESSION['esAdmin'] = false;
+        $_SESSION['correo'] = $email;
         $_SESSION['id_usuario'] = $id_usuario;
+        
+        include('../model/M_Correo_Registro.php');
         
         if(isset($_SESSION['terminandocompra']) && $_SESSION['terminandocompra'] == true){
             $_SESSION['terminandocompra'] = false;

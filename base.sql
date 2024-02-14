@@ -41,6 +41,7 @@ CREATE TABLE Usuario(
 
 CREATE TABLE Producto(
     id int AUTO_INCREMENT,
+    enabled BOOLEAN DEFAULT TRUE,
     nombre_producto varchar(50),
     precio DECIMAL(10,2),
     stock int,
@@ -48,6 +49,7 @@ CREATE TABLE Producto(
     PRIMARY KEY (id)
 );
 
+-- ALTER TABLE Producto ADD COLUMN enabled BOOLEAN DEFAULT TRUE;
 
 CREATE TABLE Ingrediente(
     id int AUTO_INCREMENT,
@@ -120,3 +122,4 @@ INSERT INTO DetallePedido(pedido_id, producto_id, cantidad, precio, iva) VALUES(
 UPDATE Producto SET stock = stock - 1 WHERE id = 1;
 
 SELECT * FROM usuario;
+SELECT * from Pedido;
