@@ -3,6 +3,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+$nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';
+$apellido = isset($_POST['apellido']) ? $_POST['apellido'] : '';
 $provincia = isset($_GET['provincia']) ? $_GET['provincia'] : '';
 
 include('./config/config.php');
@@ -23,10 +25,11 @@ if ($provincia != '') {
     <h2>Registro de Usuario</h2>
     <form action="./Model/M_IngresoU.php" method="post">
         <label for="nombre">Nombre*</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" value="<?php echo $nombre; ?>" required>
         <br>
         <label for="apellido">Apellido*</label>
-        <input type="text" id="apellido" name="apellido" required>
+        <input type="text" id="apellido" name="apellido" value="<?php echo $apellido; ?>"
+        required>
         <br>
         <label for="Provincia">Provincia*</label>
         <select id="provincia" name="provincia"
@@ -71,8 +74,10 @@ if ($provincia != '') {
 <script>
 document.getElementById('provincia').addEventListener('change', async function() {
     var provincia = this.value;
-    
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+
     // fetch(`./?pagina=crearcuenta&provincia=${provincia}`)
-    location.href = `./?pagina=crearcuenta&provincia=${provincia}`;
+    location.href = `./?pagina=crearcuenta&provincia=${provincia}&nombre=${nombre}&apellido=${apellido}`;
 });
 </script>
