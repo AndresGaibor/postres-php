@@ -6,7 +6,7 @@
         <div class="contenido-texto">
             <h3><span>1</span>¿Quiénes somos?</h3>
             <p>Somos reposteros experimentados en el área de con más de 6 años de experiencia, cursos de repostería completados y con mucho tiempo trabajando en la misma área.</p>
-            <h3><span>2</span> mejores en calidad</h3>
+            <h3><span>2</span> Mejores en calidad</h3>
             <p>Tenemos experiencia laboral y conocemos los productos del mercado, por lo que siempre trabajamos con los materiales de la mejor calidad y gracias a nuestro trabajo impecable jamás dejamos a un cliente insatisfecho.</p>
         </div>
     </div>

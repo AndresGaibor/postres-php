@@ -12,7 +12,7 @@
     <ul class="list-group">
         <li class="list-group-item"><a href="./Model/M_Reporte_Pedido.php">Reportes de pedidos</a></li>
         <li class="list-group-item"><a href="./Model/M_Reporte_Usuarios.php">Reporte de Usuarios</a></li>
-        <li class="list-group-item"><a href="">Reporte x</a></li>
+        <li class="list-group-item"><a href="./Model/M_Reporte_ListaProductos.php">Reporte por categoria</a></li>
         <li class="list-group-item"><a href="">Reporte x</a></li>
         <li class="list-group-item"><a href="">Reporte x</a></li>
         <li class="list-group-item"><a href="">Reporte x</a></li>
