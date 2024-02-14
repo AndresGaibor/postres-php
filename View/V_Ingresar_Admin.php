@@ -39,33 +39,37 @@
                         <input type="submit" value="Agregar">
                     </form>
                 </div> -->
+                <form action="./Model/M_Ingresar_Admin.php" method="post">
                 <div class="modal-body">
-                    <form action="./Model/M_Ingresar_Admin.php" method="post">
                         <label for="">Ingrese el nombre del postre:</label>
                         <br>
-                        <input type="text" name="nombre" required pattern="[a-zA-Z ]+" maxlength="50">
+                        <input  class="form-control"  type="text" name="nombre" required pattern="[a-zA-Z ]+" maxlength="50">
                         <br>
                         <label for="">Ingrese el precio:</label>
                         <br>
-                        <input type="number" name="precio" min="1.00" required step="0.01" max="50.00">
+                        <input class="form-control" type="number" name="precio" min="1.00" required step="0.01" max="50.00">
                         <br>
                         <label for="">Ingrese la cantidad:</label>
                         <br>
-                        <input type="number" name="cantidad" required min="1" max="100">
+                        <input  class="form-control"  type="number" name="cantidad" required min="1" max="100">
                         <br>
                         <label for="">Ingrese el url de la imagen:</label>
                         <br>
-                        <input type="url" name="imagen" required pattern="https?://.+(\.jpg|\.jpeg|\.png|\.gif)">
+                        <input class="form-control" type="url" name="imagen" required pattern="https?://.+(\.jpg|\.jpeg|\.png|\.gif)">
                         <br>
-                        <select name="categoria">
+                        <label for="">Seleccione la categoria:</label>
+                        <select  class="form-control"  name="categoria">
                             <option value="1">Tortas</option>
                             <option value="2">Helado</option>
                             <option value="3">Galleta</option>
                         </select>
                         <br>
-                        <input type="submit" value="Agregar">
-                    </form>
-                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-primary" value="Agregar">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
