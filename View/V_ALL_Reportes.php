@@ -12,12 +12,12 @@
 
 <body>
     <ul class="list-group">
-        <li class="list-group-item"><a href="./Model/M_Reporte_Pedido.php">Reportes de pedidos</a></li>
+        <li class="list-group-item"><a href="./Model/M_Reporte_Pedido.php">Reporte de pedidos</a></li>
         <li class="list-group-item"><a href="./Model/M_Reporte_Usuarios.php">Reporte de Usuarios</a></li>
-        <li class="list-group-item"><a href="./Model/M_SeleccionarCategoria.php">Reporte por categoria</a></li>
+        <li class="list-group-item"><a href="./Model/M_SeleccionarCategoria.php">Reporte por categoría</a></li>
         <li class="list-group-item"><a href="./Model/reporte_producto_cantidad.php">Reporte de producto por cantidad</a></li>
         <li class="list-group-item"><a href="./Model/M_Reporte_Listado_Productos.php">Reporte Listado de Productos</a></li>
-        <li class="list-group-item"><a href="">Reporte x</a></li>
+        <li class="list-group-item"><a href="./Model/M_Reporte_Dir.php">Reporte de Direcciones</a></li>
     </ul>
 </body>
 
