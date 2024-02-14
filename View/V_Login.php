@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Login.css">
-    <title>PASTELERIA | LOGIN </title>
-</head>
-<body>
-    <header class="header">
-        <a href="#" class="logo"><ion-icon name="home"></ion-icon>
-            Pastelería</a>
-        <nav class="nav">
-            <a href="#">Usuario</a>
-            <a href="#">Administrador</a>
-            <a href="#">Contactos</a>
-            <!-- Para que se centre el menú jaja  -->
-            <a href="#"></a> 
-            <a href="#"></a>
-            <a href="#"></a>
-        </nav>
-    </header>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <main>
@@ -37,6 +16,14 @@
             <a class='ewk_banner_link' href='index.php?pagina=crearcuenta'>Registrarte</a>
         </section>
     </main>
-    <script src="Login.js"></script>
-</body>
-</html> 
+    <script>
+        const backgrounds = ['images/1.jpg', 'images/2.jpg', 'images/3.jpg']; 
+let currentIndex = 0;
+
+    function changeBackground() {
+      document.body.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+      currentIndex = (currentIndex + 1) % backgrounds.length;
+    }
+
+setInterval(changeBackground, 5000);
+    </script>
