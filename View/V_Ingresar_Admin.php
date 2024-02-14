@@ -55,7 +55,7 @@
                         <br>
                         <label for="">Ingrese el url de la imagen:</label>
                         <br>
-                        <input class="form-control" type="url" name="imagen" required pattern="https?://.+(\.jpg|\.jpeg|\.png|\.gif)">
+                        <input class="form-control" type="url" name="imagen" required pattern="https://.+(\.jpg|\.jpeg|\.png|\.gif)">
                         <br>
                         <label for="">Seleccione la categoria:</label>
                         <select  class="form-control"  name="categoria">
