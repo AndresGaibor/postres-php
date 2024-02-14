@@ -108,7 +108,7 @@ INSERT INTO Provincia(nombre_provincia) VALUES('Pichincha');
 INSERT INTO Ciudad(nombre_ciudad, provincia_id) VALUES('Quito', 1);
 INSERT INTO Direccion(calle_principal, calle_secundaria, ciudad_id) VALUES('Av. 6 de Diciembre', 'NNUU', 1);
 INSERT INTO Usuario(nombre, apellido, direccion_id, correo, clave, rol, telefono) 
-                            VALUES('Andres', 'Gaibor', 1, 'androymartin99@gmail.com', '1234', 'admin', '0987654321');
+                            VALUES('Andres', 'Gaibor', 1, 'androymartin99@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'admin', '0987654321');
 
 INSERT INTO Producto(nombre_producto, precio, stock, img_url) VALUES('Torta de Chocolate', 20.00, 10, 'https://cdn0.recetasgratis.net/es/posts/4/8/8/torta_humeda_de_chocolate_decorada_47884_orig.jpg');
 INSERT INTO Ingrediente(nombre_ingrediente) VALUES('Chocolate');
